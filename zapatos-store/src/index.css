@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h1, h2, h3 {
+    font-family: 'Fraunces', serif;
+  }
+  ::selection {
+    background-color: #C17A3D;
+    color: #F1EAE0;
+  }
+  :focus-visible {
+    outline: 2px solid #C17A3D;
+    outline-offset: 2px;
+  }
+}
+
+@layer components {
+  /* Línea punteada tipo costura de cuero — elemento firma del diseño */
+  .stitch-divider {
+    height: 1px;
+    background-image: repeating-linear-gradient(
+      90deg,
+      #A9673A 0,
+      #A9673A 6px,
+      transparent 6px,
+      transparent 12px
+    );
+  }
+
+  .stitch-border {
+    position: relative;
+  }
+  .stitch-border::after {
+    content: '';
+    position: absolute;
+    inset: 6px;
+    border: 1px dashed rgba(169, 103, 58, 0.35);
+    pointer-events: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
+}
