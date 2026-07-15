@@ -14,6 +14,7 @@ import AdminProductForm from './pages/admin/AdminProductForm.jsx'
 import AdminCategories from './pages/admin/AdminCategories.jsx'
 import AdminOrders from './pages/admin/AdminOrders.jsx'
 import AdminUsers from './pages/admin/AdminUsers.jsx'
+import AdminExpenses from './pages/admin/AdminExpenses.jsx'
 
 function Storefront() {
   return (
@@ -49,6 +50,7 @@ export default function App() {
         <Route path="productos/:id/editar" element={<AdminProductForm />} />
         <Route path="categorias" element={<AdminCategories />} />
         <Route path="pedidos" element={<AdminOrders />} />
+        <Route path="gastos" element={<AdminExpenses />} />
         <Route
           path="usuarios"
           element={

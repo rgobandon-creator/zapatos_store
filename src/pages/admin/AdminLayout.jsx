@@ -29,6 +29,9 @@ export default function AdminLayout() {
               <NavLink to="/admin/pedidos" className={linkClass}>
                 Pedidos
               </NavLink>
+              <NavLink to="/admin/gastos" className={linkClass}>
+                Gastos
+              </NavLink>
               {isAdmin && (
                 <NavLink to="/admin/usuarios" className={linkClass}>
                   Usuarios
