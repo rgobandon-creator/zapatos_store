@@ -20,6 +20,11 @@ export default function AdminLayout() {
               Admin
             </span>
             <nav className="flex gap-1 ml-4">
+              {isAdmin && (
+                <NavLink to="/admin/dashboard" className={linkClass}>
+                  Dashboard
+                </NavLink>
+              )}
               <NavLink to="/admin/productos" className={linkClass}>
                 Productos
               </NavLink>
