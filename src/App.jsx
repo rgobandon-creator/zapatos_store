@@ -15,6 +15,7 @@ import AdminCategories from './pages/admin/AdminCategories.jsx'
 import AdminOrders from './pages/admin/AdminOrders.jsx'
 import AdminUsers from './pages/admin/AdminUsers.jsx'
 import AdminExpenses from './pages/admin/AdminExpenses.jsx'
+import AdminIncome from './pages/admin/AdminIncome.jsx'
 
 function Storefront() {
   return (
@@ -51,6 +52,7 @@ export default function App() {
         <Route path="categorias" element={<AdminCategories />} />
         <Route path="pedidos" element={<AdminOrders />} />
         <Route path="gastos" element={<AdminExpenses />} />
+        <Route path="ingresos" element={<AdminIncome />} />
         <Route
           path="usuarios"
           element={
